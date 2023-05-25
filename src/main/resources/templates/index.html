@@ -19,6 +19,7 @@
 	</thead>
 	<tbody>
 		<tr th:each="personal: ${personales}">
+		<td th:text="${personal.id}"></td>	
 		<td th:text="${personal.nombre}"></td>
 		<td th:text="${personal.sueldo}"></td>
 		<td th:text="${personal.area.nombre}"></td>
