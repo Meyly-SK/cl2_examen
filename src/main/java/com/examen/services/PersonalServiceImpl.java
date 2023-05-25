@@ -18,4 +18,9 @@ public class PersonalServiceImpl implements PersonalService{
 	public List<Personal> getAllPersonal(){
 		return this.personalRepository.findAll();
 	}
+	
+	@Override
+	public List<Personal> getPersonalByAreaCodigo(long codigo) {
+	    return personalRepository.findByAreaCodigo(codigo);
+	}
 }

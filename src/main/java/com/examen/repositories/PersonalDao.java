@@ -12,4 +12,6 @@ public interface PersonalDao extends CrudRepository<Personal, Long> {
 	
 	public List<Personal> findAll();
 	
+	List<Personal> findByAreaCodigo(long codigo);
+	
 }

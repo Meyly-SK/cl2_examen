@@ -27,7 +27,7 @@ public class Area implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "area_id")
-	Long id;
+	Long codigo;
 	
 	@Column(name = "area_nombre")
     String nombre;
